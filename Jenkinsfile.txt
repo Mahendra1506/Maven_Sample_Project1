@@ -1,7 +1,6 @@
 pipeline{
     agent any
     stages{
-        stage("Maven"){
         stage("mvn package"){
             steps{
                 bat 'mvn package'
