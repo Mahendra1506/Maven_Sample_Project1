@@ -3,12 +3,12 @@ pipeline{
     stages{
         stage("mvn package"){
             steps{
-                bat 'mvn package'
+                sh 'mvn package'
             }
         }
         stage("jar file"){
             steps{
-                bat 'java -jar target/java-project2-1.9.jar'
+                sh 'java -jar target/java-project2-1.9.jar'
             }
         }
     }
